@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        background-color: #43362B;
+
+        .footer-logo {
+            display: flex;
+            flex-direction: column;
+            width: 100px;
+            margin-top: 10px;
+
+            img {
+                height: 53px;
+                object-fit: cover;
+            }
+
+            p {
+                padding-left: 10px;
+                color: #E2E0DF;
+                font-size: 10px;
+            }
+        }
+    }
+
+
+
+    .footer-bottom {
+        background-color: #BCA58D;
+    }
+}

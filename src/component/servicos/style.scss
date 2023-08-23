@@ -1,0 +1,50 @@
+.servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+    h3 {
+        margin-left: 65px;
+        font-weight: 800;
+        font-size: 30px;
+        color: #806d5f;
+        margin-bottom: 0;
+    }
+
+    p {
+        color: #635e5a;
+    }
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .infoExtra {
+        display: flex;
+        flex-flow: column wrap;
+        gap: 30px;
+        font-size: 20px;
+        margin-bottom: 20px;
+        border-top: 0.5px solid #BBBCBF;
+        color: rgb(73, 72, 72);
+        padding-top: 10px;
+
+        button {
+            // width: max-content;
+            padding: 7.5px 20px;
+            cursor: pointer;
+            background-color: #E2E0DF;
+            border: none;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            font-size: 25px;
+            color: #868583;
+        }
+    }
+}

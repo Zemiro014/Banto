@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { Outlet, RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Template from './component/template';
+import Home from './views/home';
+import Contratar from './views/contratar';
 import './App.css';
+
+const rotas = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: '/contratar',
+    element: <Contratar />
+  }
+]);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='container'>
+        <Template>
+          <RouterProvider router={rotas}>
+            <Outlet />
+          </RouterProvider>
+        </Template>
+      </div>
     </div>
   );
 }
