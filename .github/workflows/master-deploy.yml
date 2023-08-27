@@ -3,7 +3,7 @@ name: Vercel Deploy
 on:
   push:
     branches:
-      - main # ou a branch que deseja monitorar para deploy
+      - naster # ou a branch que deseja monitorar para deploy
 
 jobs:
   build:
